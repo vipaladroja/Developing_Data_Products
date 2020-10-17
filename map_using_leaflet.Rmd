@@ -1,0 +1,21 @@
+---
+title: "Developing data products peer graded assignment"
+author: "Vipal Adroja"
+date: "17 October, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r my_plot}
+library(leaflet)
+my_plot <- leaflet() %>% addTiles() 
+my_plot <- my_plot %>% addMarkers(lat=13.35, lng=74.78333, popup="My College")
+my_plot
+
+```
+
+
